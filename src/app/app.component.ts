@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgxParticlesModule } from '@tsparticles/angular';
-import { NavbarComponent } from './components/navbar/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NgxParticlesModule, NavbarComponent ],
+  imports: [RouterOutlet, NgxParticlesModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'torquatoit';
+  title = 'Torquato IT';
 }

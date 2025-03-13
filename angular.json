@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              
+
               {
 
                 "glob": "**/*",
@@ -35,7 +35,7 @@
                "node_modules/@fortawesome/fontawesome-free/css/all.css"
 
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","https://kit.fontawesome.com/93a76f3d46.js"
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 ]
           },
           "configurations": {

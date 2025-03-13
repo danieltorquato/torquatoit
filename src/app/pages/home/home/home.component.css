@@ -6,21 +6,31 @@ app-particles {
   height: 80vh; /* Altura do efeito de partículas */
   z-index: -1; /* Fica atrás do conteúdo */
 }
-
+a{
+  text-decoration: none;
+}
 .banner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   z-index: 1;
   height: 87vh; /* Diminui a altura do banner */
   color: white;
   text-align: center;
 
-  .content {
+  .content-banner {
     max-width: 800px;
-    transform: scale(1.3);
+    transform: scale(1.20);
+    position: absolute;
+    top: 45%;
+/* margin: auto ; */
   }
+  .btn-services{
+background: #a07524;
+color: #fff;
+box-shadow: 1px 1px 5px 1px rgb(59, 58, 58);
 
+  }
   h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -63,11 +73,13 @@ app-particles {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
+
   }
 
   .card:hover {
     transform: scale(1.05);
     transition: 0.6s;
+    cursor: pointer;
   }
 
   .card-img-top {
@@ -123,4 +135,87 @@ app-particles {
       color: #ffffff;
     }
   }
+}
+.contact-section {
+  background: #1f1f1f;
+color: #fff;
+transition: ease-out;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-info a:hover {
+  color: #cfcfcf;
+}
+.text-contact{
+  color: #9e7b3b;
+}
+.btn-contact{
+  background: #9e7b3b;
+  font-weight: 600;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh; /* Ajusta o tamanho em telas menores */
+    .content-banner {
+      max-width: 800px;
+      transform: scale(1.0);
+  /* margin: auto ; */
+    }
+  }
+
+  .banner h1 {
+    font-size: 2rem; /* Reduz tamanho do título */
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+#about {
+  background-color: #1f1f1f;
+  padding: 50px 0;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#about .lead {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#about .row {
+  margin-top: 40px;
+}
+
+h2{
+  color: #9e7b3b;
+
 }
